@@ -2,7 +2,8 @@ import Sidebar from "@/components/sidebar/Sidebar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Box, CssBaseline } from "@mui/material";
+import { Box, CssBaseline, Grid } from "@mui/material";
+import Header from "@/components/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <CssBaseline>
-          <Box m={1}>
-            <Sidebar />
-            {children}
-          </Box>
+          <Grid container m={1}>
+            <Grid item mr={2}>
+              <Sidebar />
+            </Grid>
+            <Grid item mt={2} ml={2}>
+              <Header />
+              {children}
+            </Grid>
+          </Grid>
         </CssBaseline>
       </body>
     </html>
