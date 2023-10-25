@@ -1,6 +1,8 @@
+import Sidebar from "@/components/sidebar/Sidebar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Box, CssBaseline } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <CssBaseline>
+          <Box m={1}>
+            <Sidebar />
+            {children}
+          </Box>
+        </CssBaseline>
+      </body>
     </html>
   );
 }
