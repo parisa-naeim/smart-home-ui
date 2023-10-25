@@ -21,11 +21,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <CssBaseline>
-          <Grid container m={1}>
-            <Grid item mr={2}>
+          <Grid container ml={1} mt={1} spacing={2}>
+            <Grid item xs={2} md={1}>
               <Sidebar />
             </Grid>
-            <Grid item mt={2} ml={2}>
+            <Grid item xs={10} md={11} mt={1.5}>
               <Header />
               {children}
             </Grid>

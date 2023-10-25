@@ -14,10 +14,10 @@ import styles from "./header.module.css";
 
 const Header = () => {
   return (
-    <Grid container sx={{ width: "90vw" }}>
+    <Grid container>
       <Grid item xs={6}>
         <TextField
-          // fullWidth
+          fullWidth
           sx={{ width: "80%" }}
           label="Search"
           id="fullWidth"

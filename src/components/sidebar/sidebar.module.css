@@ -1,13 +1,13 @@
 .container {
   background-color: #7a40f2;
-  min-width: 80px;
-  min-height: 98vh;
-  border-radius: 20px;
-  max-width: 100px;
+  /* min-width: 80px; */
+  min-height: 90vh;
+  border-radius: 1.5em;
+  max-width: 5em;
 }
 
 .sideBarItem {
   cursor: pointer;
   color: white;
-  font-size: 2em;
+  font-size: 1.8em;
 }

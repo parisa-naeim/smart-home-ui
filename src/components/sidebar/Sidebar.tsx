@@ -13,7 +13,7 @@ const Sidebar = () => {
   return (
     <Grid
       container
-      sx={{ color: "text.primary" }}
+      sx={{ color: "text.primary", minWidth: "5em" }}
       className={styles.container}
       justifyContent="space-around"
       alignItems="center"
@@ -40,6 +40,8 @@ const Sidebar = () => {
       <Grid item xs={12}>
         <AssessmentOutlinedIcon className={styles.sideBarItem} />
       </Grid>
+      <Grid item xs={12}></Grid>
+      <Grid item xs={12}></Grid>
       <Grid item xs={12}></Grid>
       <Grid item xs={12}></Grid>
       <Grid item xs={12}></Grid>
