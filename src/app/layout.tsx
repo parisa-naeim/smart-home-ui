@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <CssBaseline>
-          <Grid container ml={1} mt={1} spacing={2}>
+          <Grid container p={1} spacing={2}>
             <Grid item xs={2} md={1}>
               <Sidebar />
             </Grid>
