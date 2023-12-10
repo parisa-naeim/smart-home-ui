@@ -1,5 +1,11 @@
+import Summary from "@/components/summary/Summary";
+
 function Home() {
-  return <></>;
+  return (
+    <>
+      <Summary />
+    </>
+  );
 }
 
 export default Home;
