@@ -17,10 +17,14 @@ const Header = () => {
     <Grid container>
       <Grid item xs={6}>
         <TextField
-          fullWidth
-          sx={{ width: "80%" }}
+          sx={{
+            "& fieldset": { border: "none" },
+            width: "70%",
+            backgroundColor: "#EDEEF4",
+            borderRadius: "10px",
+            color: "#EDEEF4",
+          }}
           label="Search"
-          id="fullWidth"
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
