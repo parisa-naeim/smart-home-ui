@@ -11,28 +11,13 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import styles from "./header.module.css";
+import SearchBar from "../search/SearchBar";
 
 const Header = () => {
   return (
     <Grid container>
       <Grid item xs={6}>
-        <TextField
-          sx={{
-            "& fieldset": { border: "none" },
-            width: "70%",
-            backgroundColor: "#EDEEF4",
-            borderRadius: "10px",
-            color: "#EDEEF4",
-          }}
-          label="Search"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            ),
-          }}
-        />
+        <SearchBar />
       </Grid>
       <Grid item xs={6}>
         <Grid
