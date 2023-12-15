@@ -1,11 +1,4 @@
-import {
-  Box,
-  Grid,
-  InputAdornment,
-  TextField,
-  Typography,
-} from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+import { Box, Grid, Typography } from "@mui/material";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -15,11 +8,17 @@ import SearchBar from "../search/SearchBar";
 
 const Header = () => {
   return (
-    <Grid container sx={{ textAlign: { xs: "center", sm: "left" } }}>
-      <Grid item xs={12} sm={6}>
+    <Grid container>
+      <Grid
+        item
+        sm={12}
+        md={6}
+        order={{ xs: 2, sm: 2, md: 1 }}
+        sx={{ margin: { xs: 1, sm: 0 } }}
+      >
         <SearchBar />
       </Grid>
-      <Grid item xs={12} sm={6}>
+      <Grid item sm={12} md={6} order={{ xs: 1, sm: 1, md: 2 }}>
         <Grid
           container
           direction="row"
