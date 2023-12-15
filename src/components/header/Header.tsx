@@ -11,14 +11,14 @@ const Header = () => {
     <Grid container>
       <Grid
         item
-        sm={12}
+        xs={12}
         md={6}
         order={{ xs: 2, sm: 2, md: 1 }}
-        sx={{ margin: { xs: 1, sm: 0 } }}
+        sx={{ margin: { sm: 1, md: 0 } }}
       >
         <SearchBar />
       </Grid>
-      <Grid item sm={12} md={6} order={{ xs: 1, sm: 1, md: 2 }}>
+      <Grid item xs={12} md={6} order={{ xs: 1, sm: 1, md: 2 }}>
         <Grid
           container
           direction="row"

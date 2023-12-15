@@ -9,7 +9,7 @@ const SearchBar = () => {
         backgroundColor: "#EDEEF4",
         borderRadius: "10px",
         color: "#EDEEF4",
-        width: { sm: "100%", md: "70%" },
+        width: "100%",
       }}
       label="Search"
       InputProps={{
