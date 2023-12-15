@@ -15,11 +15,11 @@ import SearchBar from "../search/SearchBar";
 
 const Header = () => {
   return (
-    <Grid container>
-      <Grid item xs={6}>
+    <Grid container sx={{ textAlign: { xs: "center", sm: "left" } }}>
+      <Grid item xs={12} sm={6}>
         <SearchBar />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} sm={6}>
         <Grid
           container
           direction="row"

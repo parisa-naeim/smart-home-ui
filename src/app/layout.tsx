@@ -22,10 +22,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <CssBaseline>
           <Grid container p={1} spacing={2}>
-            <Grid item xs={2} md={1}>
+            <Grid item sm={2}>
               <Sidebar />
             </Grid>
-            <Grid item xs={10} md={11} mt={1.5}>
+            <Grid item xs={12} sm={10} mt={1.5}>
               <Header />
               {children}
             </Grid>
