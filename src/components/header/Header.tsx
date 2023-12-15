@@ -1,10 +1,6 @@
-import { Box, Grid, Typography } from "@mui/material";
-import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
-import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import styles from "./header.module.css";
+import { Grid } from "@mui/material";
 import SearchBar from "../search/SearchBar";
+import UserMenu from "../user/UserMenu";
 
 const Header = () => {
   return (
@@ -19,26 +15,7 @@ const Header = () => {
         <SearchBar />
       </Grid>
       <Grid item xs={12} md={6} order={{ xs: 1, sm: 1, md: 2 }}>
-        <Grid
-          container
-          direction="row"
-          justifyContent="flex-end"
-          alignItems="center"
-        >
-          <Grid item className={styles.headerItem}>
-            <SettingsOutlinedIcon />
-          </Grid>
-          <Grid item className={styles.headerItem}>
-            <NotificationsNoneIcon />
-          </Grid>
-          <Grid item className={styles.headerItem}>
-            <Box sx={{ display: "flex" }}>
-              <AccountCircleIcon sx={{ mr: 1 }} />
-              <Typography>Parisa</Typography>
-              <KeyboardArrowDownIcon />
-            </Box>
-          </Grid>
-        </Grid>
+        <UserMenu />
       </Grid>
     </Grid>
   );
