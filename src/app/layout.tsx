@@ -22,9 +22,14 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} >
         <CssBaseline>
-          <Grid container p={1} spacing={2}>
+          <Grid
+            container
+            p={1}
+            spacing={2}
+            sx={{ maxWidth: "100%", overflowX: "hidden" }}
+          >
             <Grid item sm={2}>
               <Sidebar />
             </Grid>
