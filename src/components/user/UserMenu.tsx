@@ -9,7 +9,11 @@ import { styled } from "@mui/system";
 const GridItem = styled(Grid)`
   cursor: pointer;
   font-size: 2em;
-  margin-right: 1em;
+
+  ${(props) => props.theme.breakpoints.up("sm")} {
+    margin-right: 1em;
+  }
+
   color: #393939;
 `;
 
@@ -20,11 +24,12 @@ const UserMenu = () => {
       direction="row"
       justifyContent="flex-end"
       alignItems="center"
+      sx={{ marginBottom: 1 }}
     >
-      <GridItem item>
+      <GridItem item sx={{ display: { xs: "none", sm: "flex" } }}>
         <SettingsOutlinedIcon />
       </GridItem>
-      <GridItem item>
+      <GridItem item sx={{ display: { xs: "none", sm: "flex" } }}>
         <NotificationsNoneIcon />
       </GridItem>
       <GridItem item>
