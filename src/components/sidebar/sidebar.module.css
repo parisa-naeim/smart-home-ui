@@ -27,19 +27,18 @@
   z-index: -10;
   top: 0;
   left: 20px;
-  width: 90%;
   height: 100%;
   content: "";
   background-color: #f9f9f9;
 
   transition: all 300ms ease;
   opacity: 0;
-  height: 0;
+  width: 0;
   overflow: hidden;
   border-radius: 10px 0 0 10px;
 }
 
 .sideBarItem:hover::before {
   opacity: 1;
-  height: 100%;
+  width: 90%;
 }
